@@ -1,0 +1,137 @@
+ <h1 class="signin">Hello anugular {{ title }}</h1> 
+<!-- <app-sign-in></app-sign-in> -->
+<!-- <h2>{{data}}</h2> -->
+<!-- <h2>{{getValue()}}</h2> -->
+<!-- <app-login></app-login>
+
+<button (click)="getValue()">Click</button>
+<button (click)="getName('Suresh')">Click2</button>
+<div><button (click)="getData('xyzs')">Call</button></div>
+<input type="text" #xyz (keyup)="getData($event)" placeholder="enter text" /> 
+<h1 (mouseover)="getData('over')">Hello</h1> -->
+<!-- <input type="text"  #box3 (keyup)="getWhat(box3.value)" placeholder="Enter Name"  /> -->
+<!-- <input type="text"  #box3 placeholder="Enter Name"  />
+<button (click)="getWhat(box3.value)">Click</button>
+<p>
+    Box Value:{{displayVal}}
+</p> -->
+<!-- //counter
+<button (click)="counter('add')">++</button>
+
+<p>count:{{count}}</p>
+<button (click)="counter('minus')">--</button>
+//counter -->
+<!--property binding(boolean value works but it doesnot work in interpolation)-->
+
+<!-- <input type="text" name="user-name" value={{name}} disabled={{disable}} id=""> //counts disable as simple string
+<br>
+<br> -->
+<!-- <input type="text" name="user-name" [value]=name [disabled]=disable id="xyz"> //counts disable as js  
+
+<button (click)="c"> disable</button> -->
+<!-- <h1 *ngIf="show else elseBlock">Hello Ram</h1>
+<ng-template #elseBlock>
+    <h1>else condition</h1>
+</ng-template> -->
+<!-- IfElse  -->
+<!-- <h1 *ngIf="show; then ifBlock; else elseBlock"></h1>
+<div>
+  <ng-template #ifBlock>
+    <input type="text" class="text" />
+  </ng-template>
+</div>
+<div>
+  <ng-template #elseBlock>
+    <input type="text" class="text" value="nothing">  
+  </ng-template>
+</div>
+
+<button (click)="getDisabled()">Toggle</button> -->
+<!-- Multiple ElseIf
+<ng-template [ngIf]="color==='red'">
+    <h1 style="color: red;">Red Color</h1>
+</ng-template>
+
+<ng-template [ngIf]="color==='green'">
+    <h1 style="color: green;">Green Color</h1>
+</ng-template>
+
+<ng-template [ngIf]="color==='blue'">
+    <h1 style="color: blue;">Blue Color</h1>
+</ng-template>
+
+<ng-template [ngIf]="color==='pink'">
+    <h1 style="color: rgb(241, 147, 185);">Pink Color</h1>
+</ng-template> -->
+
+<!-- SWitch case
+
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="color: red;">Red Color</h1>
+    <h1 *ngSwitchCase="'green'" style="color: #00ff5e;">Green Color</h1>
+    <h1 *ngSwitchCase="'blue'" style="color: rgb(18, 105, 180);">Blue Color</h1>
+    <h1 *ngSwitchCase="'yellow'" style="color: #e1e354;">Yellow Color</h1>
+    <h1 *ngSwitchDefault >NO Color</h1>
+    
+    
+</div> -->
+
+<!-- LOOP IN ANGULAR
+<h2 *ngFor="let item of users">Name is :{{item}}</h2>
+<h2 *ngFor="let item of userDetails">{{item.name}}::: {{item.Email}} :::{{item.Phone}} </h2> -->
+
+<!-- NESTED LOOPS OR MULTIDIMNSIONAL ARRAY -->
+
+<!-- <ul *ngFor="let xyz of users">
+    
+        <li>Name: {{xyz.name}}</li>
+        <li>Email Id: {{xyz.Email}}</li>
+        <li>Phone No.: {{xyz.Phone}}</li>
+        <li>Social Accounts</li>
+    
+    <ul *ngFor="let account of xyz.SocialAccounts">
+        <li> {{account}}</li>
+    </ul>
+    
+</ul> -->
+
+<!-- Style Binding 
+
+<div>
+    <h1 [style.color]="color" [style.backgroundColor]= "bgColor">Hello anugular {{ title }}</h1>
+</div>
+<button (click)="updateColor()">color update</button> -->
+
+<!-- HEADER
+
+<app-header></app-header> -->
+
+ <!-- Toggle  -->
+<h1 *ngIf="display; then ifBlock; else elseBlock"></h1>
+<div>
+  <ng-template #ifBlock>
+    <h1 [style.color]="color1" [style.backgroundColor]="bgcolor1">
+      Hello Angular {{ title }}
+    </h1>
+  </ng-template>
+  <ng-template #elseBlock>
+    <h1 [style.color]="color2" [style.backgroundColor]="bgcolor2">
+      Hello Angular {{ title }}
+    </h1>
+  </ng-template>
+</div>
+
+<button (click)="toggle()">Toggle</button> 
+
+<!-- Bootstrap 
+
+<p>
+    <ngb-alert [dismissible]="false">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </ngb-alert>
+</p>
+-->
+
+
+
+
