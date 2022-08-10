@@ -75,15 +75,15 @@ export class AppComponent {
   // }
 
   //Toggle
-  color1 = 'red';
-  bgcolor1 = 'green';
-  color2 = 'blue';
-  bgcolor2 = 'grey';
+  // color1 = 'red';
+  // bgcolor1 = 'green';
+  // color2 = 'blue';
+  // bgcolor2 = 'grey';
 
-  display = false;
-  toggle() {
-    this.display = !this.display;
-  }
+  // display = false;
+  // toggle() {
+  //   this.display = !this.display;
+  // }
 
   
 }
