@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'blog12';
+  data= 'blog12';
   //   data = 'code step by step' + " " + 2*2;
   //  getValue(){
   //     alert("Big HELLO");
@@ -85,6 +86,57 @@ export class AppComponent {
   //   this.display = !this.display;
   // }
 
+  // list:any[]=[];
+  //  NewTask(item:string){
+
+  //   this.list.push({id:this.list.length,name:item})
+  //   console.warn(this.list);
+
+  // }
+  // RemoveItem(id:number){
+  //   this.list=this.list.filter(item=>item.id!==id);
+  // }
+//   data =5;
+//   updateData(){
+//     this.data=Math.floor(Math.random()*10);
+//   }
+
+// userDetails=[
+//   {name:'Zara',email:'zara@test.com'},
+//   {name:'Shara',email:'shara@test.com'},
+//   {name:'Bhara',email:'bhara@test.com'},
+//   {name:'Khara',email:'khara@test.com'},
+//   {name:'Nhara',email:'nhara@test.com'}
+// ];
+
+// data='X';
+// updateData(item:string){
+//   console.warn(item);
+//   this.data=item;
+// }
+
+// data1:any;
+
+// today=Date();
+
+// userData=[
+//   {name:'Anil' , mob:101},
+//   {name:'Anil1' , mob:1001},
+//   {name:'Anil2' , mob:10001},
+//   {name:'Anil3' , mob:100001},
+//   {name:'Anil4' , mob:1000001}
   
-}
+// ]
+  
+
+//  TEMPLATE FORMS IN ANGULAR
+// loginUser(item:any){
+
+//   console.warn(item);
+// }
+
+//REACTIVE FORMS IN ANGULAR
+
+
+ }
 

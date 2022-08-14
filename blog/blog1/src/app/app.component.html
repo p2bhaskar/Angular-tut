@@ -1,6 +1,7 @@
- <h1 class="signin">Hello anugular {{ title }}</h1> 
+<!-- <h1 class="signin">Hello anugular {{ title }}</h1>  -->
 <!-- <app-sign-in></app-sign-in> -->
-<!-- <h2>{{data}}</h2> -->
+<h2>{{ data }}</h2>
+
 <!-- <h2>{{getValue()}}</h2> -->
 <!-- <app-login></app-login>
 
@@ -106,7 +107,7 @@
 
 <app-header></app-header> -->
 
- <!-- Toggle  -->
+<!-- Toggle  -->
 <!-- <h1 *ngIf="display; then ifBlock; else elseBlock"></h1>
 <div>
   <ng-template #ifBlock>
@@ -131,7 +132,103 @@
     </ngb-alert>
 </p>
 -->
+<!-- 
+ <div class="example-button-row">
+    <button mat-raised-button>Basic</button>
+    <button mat-raised-button color="primary">Primary</button>
+    <button mat-raised-button color="accent">Accent</button>
+    <button mat-raised-button color="warn">Warn</button>
+    <button mat-raised-button disabled>Disabled</button>
+    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+  </div> -->
 
-<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+<!-- TodoList 
+
+
+  <input type="text" placeholder="Enter New Task" #task />
+  <br> 
+  <br>
+  <button (click)="NewTask(task.value)">Add New Task</button>
+
+  <br>
+  <br>
+
+
+<ul *ngFor="let abc of list " >
+  <li>{{abc.name}} <button (click)="RemoveItem(abc.id)">Remove</button></li>
+</ul> -->
+
+<!-- <app-child [item]="data"></app-child>
+<button (click)="updateData()">Update Child Component</button> -->
+<!-- <ul *ngFor="let data of userDetails">
+<app-child [item]="data"></app-child>
+</ul> -->
+<!-- <h2>{{data}}</h2>  -->
+<!-- <app-child (updateDataEvent)="updateData($event)"></app-child> -->
+
+<!-- <input type="text" [(ngModel)]="data1">
+<h2>{{data1}}</h2> -->
+
+<!-- PIPES 
+<h2>{{today|date:'fullDate'}}</h2> 
+<h2>{{userData|json|uppercase}}</h2> 
+<h1>{{003.3400|number:'1.2'}}</h1>
+<h1>{{100|currency:'USD'}}</h1> -->
+
+<!--FORMS
+Forms Use 
+1)Submission of some information in Database
+2)But Angular cannot connect to Database
+3)So we send data to API
+4)and API update the Database
+5)Example a)Login b)SignUP c)Post d)Google Search is also a form 
+
+Forms Type in Angular
+1)Template Driven Form (.html file is component-template )
+  >Mostly work done in the component template.
+2)Reactive Form (.ts is called class )
+  >Mostly work done in component component-class.
+DATA FLOW WITH FORMS
+[template]->[class]->[service]->[Service]->[Database]
+
+<h2>Template Driven Forms</h2>
+
+<form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
+  <input
+    type="text"
+    required
+    #name="ngModel"
+    pattern="[a-zA-Z]+$"
+    name="name"
+    placeholder="Enter Name"
+    ngModel
+  />
+  <br />
+  <span *ngIf="name.invalid && name.touched" style="color: red"
+    >Please Enter Valid Input</span
+  >
+  <br />
+  <input
+    type="password"
+    pattern="[0-9]*"
+    name="password"
+    minlength="2"
+    required
+    #password="ngModel"
+    placeholder="Enter password"
+    ngModel
+  />
+  <br />
+  <span *ngIf="password.invalid && password.touched" style="color: red"
+    >Please Enter Valid Input</span
+  >
+  <br />
+  <br />
+  <button [disabled]="loginForm.invalid">Log in</button>
+</form>
+<!-- Outside Button will also work  
+<button (click)="loginUser(loginForm.value)">Login</button> -->
+
+<!-- REACTIVE FORMS IN ANGULAR -->
 
 
