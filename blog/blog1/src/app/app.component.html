@@ -226,9 +226,20 @@ DATA FLOW WITH FORMS
   <br />
   <button [disabled]="loginForm.invalid">Log in</button>
 </form>
-<!-- Outside Button will also work  
+ Outside Button will also work  
 <button (click)="loginUser(loginForm.value)">Login</button> -->
 
 <!-- REACTIVE FORMS IN ANGULAR -->
-
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+  <input type="text" placeholder="enter name" formControlName="user">
+  <br>
+  <span style="color: red;" *ngIf="user && user.invalid && user.touched">Invalid Input</span>
+  <br>
+  <input type="password" placeholder="enter password" formControlName="password">
+  <br>
+  <span style="color: red;" *ngIf="password && password.invalid && password.touched">Invalid Input</span>
+  <br>
+  <button [disabled]="loginForm.invalid">log in</button>
+  
+</form>
 

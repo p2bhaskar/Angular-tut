@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import{FormGroup,FormControl, Validators} from '@angular/forms'
 
 
 @Component({
@@ -137,6 +138,20 @@ export class AppComponent {
 
 //REACTIVE FORMS IN ANGULAR
 
+loginForm=new FormGroup({
+  user:new FormControl('',[Validators.required,Validators.pattern('[a-zA-Z]+$')]),
+  password:new FormControl('',[Validators.required,Validators.minLength(5)]),
+})
+loginUser(){
+  console.warn(this.loginForm.value);
+}
+get user(){
+  return this.loginForm.get('user');
 
+}
+
+get password(){
+  return this.loginForm.get('password');
+}
  }
 

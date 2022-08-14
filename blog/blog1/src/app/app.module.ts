@@ -12,6 +12,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { ChildComponent } from './child/child.component';
 import { FormsModule } from '@angular/forms';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
     BrowserAnimationsModule,
     MatSliderModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
